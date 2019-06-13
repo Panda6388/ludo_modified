@@ -1,0 +1,111 @@
+
+body{
+	position:relative;
+	max-width: 500px;
+	margin:0 auto;
+	padding-top: 100px;
+	
+	
+}
+.box1{
+	width:120px;
+	height: 68px;
+	border:2px solid black;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 0px;
+	padding: 0;
+}
+.grid1{
+	display: grid;
+	grid-template-columns:repeat(8,50px); 
+}
+.grid1 div{
+	border: 2px solid #BBA9A9;
+	width:50px;
+	height: 50px;
+	border-left:0;
+	text-align: center;
+}
+.grid2{
+	display: grid;
+}
+.grid2 div{
+	border: 2px solid #BBA9A9;
+	width:50px;
+	height: 50px;
+	border-top: 0;
+	text-align: center;
+}
+.centre div{
+	font-size: 32px;
+	
+	border: 2px solid #BBA9A9;
+	width:150px;
+	max-width: 150px;
+	height:45px ;
+	padding-left: 10px;
+	border-bottom:0;
+}
+.centre{
+	float: left;
+	position: absolute;
+	left: 123.5px;
+	top:235px;
+
+}
+
+.g3{
+	float: right;
+	position: absolute;
+	left: 350px;
+	top:154px;
+}
+.combo1{
+	float: left;
+}
+
+.combo2{
+	float: right;		
+}
+.fullgrid::after{
+	content: "";
+	clear: both;
+	display: block;
+	visibility: none;
+}
+.box2{
+	width:120px;
+	padding-top: 10px;
+	height: 68px;
+	border:2px solid black;
+}
+.fullgrid{
+	float: left;
+}
+.box2{
+
+	float: right;
+	position: absolute;
+	left: 430px;
+	top: 436px;
+	font-size: 24px;
+	text-align: center;
+	
+}
+.box1{
+	float:left;
+	position: absolute;
+	left: -150px;
+	padding-top: 10px;
+
+}
+.fullgrid{
+	float: left;
+}
+.g3 div{
+	width:48px;
+}
+#centre3.center3{
+	opacity: 0;
+}
